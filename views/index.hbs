@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Learning Nodejs</title>
+    </head>
+
+    <body>
+        {{#each users as |user|}}
+        <div>
+            <img src="/profilepics/{{user.username}}_sm.jpg" height="150" width="150"/>
+            <a href="/{{user.username}}">{{user.name.fullname}}</a>
+        </div>
+        {{/each}}
+    </body>
+</html>
