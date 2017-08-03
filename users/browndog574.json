@@ -3,13 +3,14 @@
   "name": {
     "title": "mr",
     "first": "michael",
-    "last": "hart"
+    "last": "hart",
+    "full": "Michael Hart"
   },
   "location": {
-    "street": "9388 adams st",
-    "city": "aurora",
-    "state": "montana",
-    "zip": "19895"
+    "street": "hà nội",
+    "city": "hà nội",
+    "state": "hà nội",
+    "zip": "hà nội"
   },
   "email": "michael.hart69@example.com",
   "username": "browndog574",

@@ -73,6 +73,14 @@ index.put('/:username',(req, res)=>{
     res.end()
 })
 
+index.delete('/:username',(req, res)=>{
+    var username = req.params.username
+    var user = getUser(username)
+    user.location = ''
+    saveUser(username, user)
+    res.end()
+})
+
 function saveUser(username, data){
     var fp = getUserFilePath(username)
     fs.unlink(fp)

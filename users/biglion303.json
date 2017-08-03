@@ -6,7 +6,12 @@
     "last": "franklin",
     "full": "Johnni Franklin"
   },
-  "location": {},
+  "location": {
+    "street": "Thái Hà",
+    "city": "Hà Nội",
+    "state": "Hà Nội",
+    "zip": "19"
+  },
   "email": "johnni.franklin85@example.com",
   "username": "biglion303",
   "password": "babylon",

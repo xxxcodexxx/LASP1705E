@@ -2,17 +2,18 @@
   "gender": "male",
   "name": {
     "title": "mr",
-    "first": "edwin",
-    "last": "morales"
+    "first": "Nguyen Thanh",
+    "last": "Don",
+    "full": "Nguyen Thanh Don"
   },
   "location": {
-    "street": "3353 brown terrace",
-    "city": "red bluff",
-    "state": "new mexico",
-    "zip": "74549"
+    "street": "Nguyễn Đức Cảnh",
+    "city": "Hà Nội",
+    "state": "Hà Nội",
+    "zip": "13"
   },
-  "email": "edwin.morales41@example.com",
-  "username": "bigkoala328",
+  "email": "nguyenthanhdon96@gmail.com",
+  "username": "xcode279",
   "password": "bikini",
   "salt": "eBroblf2",
   "md5": "e085bb5a765fc87b5aa0412b87d11170",
@@ -29,5 +30,5 @@
     "thumbnail": "http://api.randomuser.me/portraits/thumb/men/5.jpg"
   },
   "version": "0.6",
-  "nationality": "US"
+  "nationality": "VN"
 }
