@@ -59,7 +59,7 @@ html, body {
 
         dd {
             display: inline-block;
-            margin-left: 0;
+            margin-left: 50px !important;
             line-height: 1.5;
             margin-bottom: 5px
         }

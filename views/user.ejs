@@ -51,7 +51,7 @@
             <div class="row">
                 <div class="col-sm-4 col-md-4">
                     <div class="panel">
-                        <div class="panel-heading" style="background-color:rebeccapurple;color:#fff;"><strong><%=user.name.full%></strong></div>
+                        <div class="panel-heading" style="background-color:rebeccapurple;color:#fff;"><strong><%=infor.full%></strong></div>
                             <div class="panel-body" style="background-color:beige;color:blueviolet; box-shadow:0 -12px 13px rebeccapurple inset;">
                                 <div class="boximg">
                                     <img data-src="/profilepics/<%=user.username%>_lg.jpg" class="img-responsive"></a>
@@ -78,6 +78,22 @@
                 </div>
                 <div class="panel-body">
                     <dl>
+                        <dt>Title:</dt>
+                            <dd class="view"><%=infor.title%></dd>
+                            <dd class="edit"><input class="form-control" id="title" type="text" value="<%=infor.title%>"></dd>
+                            <br>
+                        <dt>FirstName:</dt>
+                            <dd class="view"><%=infor.first%></dd>
+                            <dd class="edit"><input class="form-control" id="first" type="text" value="<%=infor.first%>"></dd>
+                            <br>
+                        <dt>LastName:</dt>
+                            <dd class="view"><%=infor.last%></dd>
+                            <dd class="edit"><input class="form-control" id="last" type="text" value="<%=infor.last%>"></dd>
+                            <br>
+                        <dt>FullName:</dt>
+                            <dd class="view"><%=infor.full%></dd>
+                            <dd class="edit"><input class="form-control" id="full" type="text" value="<%=infor.full%>"></dd>
+                            <br>
                         <dt>Street:</dt>
                             <dd class="view"><%=address.street%></dd>
                             <dd class="edit"><input class="form-control" id="street" type="text" value="<%=address.street%>"></dd>
@@ -94,6 +110,7 @@
                             <dd class="view"><%=address.zip%></dd>
                             <dd class="edit"><input class="form-control" id="zip" type="text" value="<%=address.zip%>"></dd>
                             <br>
+                        
                         <dt></dt>
                             <dd class="edit">
                                 <div class="btn-change">
@@ -131,7 +148,11 @@
                     street: $('#street').val(),
                     city: $('#city').val(),
                     state: $('#state').val(),
-                    zip: $('#zip').val()
+                    zip: $('#zip').val(),
+                    title:$('#title').val(),
+                    first:$('#first').val(),
+                    last:$('#last').val(),
+                    full:$('#full').val(),
                 },
                 complete:function(){
                     cancel();

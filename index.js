@@ -46,7 +46,8 @@ index.get('/:username', (req, res)=>{
     // res.send(user);
     res.render('user', {
         user : user,
-        address : user.location
+        address : user.location,
+        infor : user.name
     })
 })
 
@@ -55,6 +56,9 @@ function getUser(username){
     user.name.full = lodash.startCase(user.name.first + ' ' + user.name.last)
     lodash.keys(user.location).forEach((key)=>{
         user.location[key] = lodash.startCase(user.location[key])
+    })
+    lodash.keys(user.name).forEach((key)=>{
+        user.name[key] = lodash.startCase(user.name[key])
     })
     return user
 }
@@ -69,6 +73,7 @@ index.put('/:username',(req, res)=>{
     var username = req.params.username
     var user = getUser(username)
     user.location = req.body
+    user.name = req.body
     saveUser(username, user)
     res.end()
 })
