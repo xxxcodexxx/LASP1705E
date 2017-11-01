@@ -1,16 +1,24 @@
 {
   "gender": "male",
   "name": {
-    "title": "mr",
-    "first": "felix",
-    "last": "miles",
+    "street": "Ha Nội",
+    "city": "Portland",
+    "state": "New York",
+    "zip": "53768",
+    "title": "Mr",
+    "first": "Felix",
+    "last": "Miles",
     "full": "Felix Miles"
   },
   "location": {
-    "street": "nội",
+    "street": "Ha Nội",
     "city": "Portland",
     "state": "New York",
-    "zip": "53768"
+    "zip": "53768",
+    "title": "Mr",
+    "first": "Felix",
+    "last": "Miles",
+    "full": "Felix Miles"
   },
   "email": "felix.miles29@example.com",
   "username": "blackdog881",

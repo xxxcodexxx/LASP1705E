@@ -1,0 +1,39 @@
+<div class="container">
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+    	<form enctype="multipart/form-data" method="POST" action="/user/add">
+			<h2>Nhập thông tin người dùng</h2>
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<div class="form-group">
+                        <input type="text" class="form-control input-lg" name="name" placeholder="Họ tên người dùng" tabindex="1" required>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="text" class="form-control input-lg" name="username" placeholder="UserName" tabindex="2" required>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<input type="email" class="form-control input-lg" name="email" placeholder="Email Address" tabindex="3" required>
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control input-lg" name="location" placeholder="Địa chỉ" tabindex="4" required>
+			</div>
+            <div class="form-group">
+                <input type="password" class="form-control input-lg" name="password" placeholder="Mật khẩu" tabindex="5">
+			</div>
+			<div class="form-group">
+				<input type="file" class="file-loading" name="image">
+			</div>
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-6 col-md-6"><input type="submit" value="AddNew" class="btn btn-primary btn-block btn-lg" tabindex="6"></div>
+				<div class="col-xs-6 col-md-6"><a href="/user" class="btn btn-danger btn-block btn-lg">Cancel</a></div>
+			</div>
+		</form>
+	</div>
+</div>
+</div>

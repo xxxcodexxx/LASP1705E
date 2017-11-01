@@ -1,11 +1,32 @@
-const express = require('express')
-var router = express.router()
+var express = require('express');
+var router = express.Router();
+var passport = require('passport');
+const multer = require('multer');
+const path = require('path');
+var userData = require('../models/user');
+var storages = multer.diskStorage({
+            destination:(req, file, callback)=>{
+                callback(null,'./upload')
+            },
+            filename:(req, file, callback)=>{
+                callback(null, file.originalname)
+            }
+        })
+var upload = multer({ storage:storages });
+router.get("/user", userData.getAllUser);
+router.get("/user/add", function (req, res) {
+    res.render('addUser');
+})
+router.post('/user/add',upload.single('image'),userData.addUser);
+router.get('/user/delete/:id',userData.deleteUser);
 
-var UserData = require('../models/user')
+router.get('/user/edit/:id', userData.getUserById);
+router.post('/user/edit/:id', userData.updateUser);
+module.exports = router;
 
-router.post('/user', UserData.addUser)
-router.get('/user', UserData.getAllUser)
-router.delete('/delete/:id', UserData.deleteUser)
-router.put('/update/:id', UserData.updateUser)
-router.get('/user/:id', UserData.getUserById)
+/* GET New Blob page. */
+// router.get('/new', function(req, res) {
+//     res.render('blobs/new', { title: 'Add New Blob' });
+// });
+
 module.exports = router
